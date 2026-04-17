@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testable Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <article
+      data-testid="test-profile-card"
+      aria-labelledby="profile-name"
+      class="card"
+    >
+      <figure class="avatar-wrap">
+        <img
+          data-testid="test-user-avatar"
+          src="./images/oyinkansola.jpg"
+          alt="Portrait of Oyinkansola"
+          class="avatar"
+        />
+        <figcaption class="handle">@oyinkansolaOdunsi</figcaption>
+      </figure>
+
+      <div class="content">
+        <header>
+          <h2 id="profile-name" data-testid="test-user-name" class="name">
+            Oyinkansola Odunsi
+          </h2>
+          <time
+            data-testid="test-user-time"
+            aria-live="polite"
+            aria-label="Current time in milliseconds"
+            class="time"
+            id="user-time"
+          >0</time>
+        </header>
+
+        <p data-testid="test-user-bio" class="bio">
+         Frontend Engineer with 2+ years hands-on experience building responsive and scalable web apps with HTML, CSS,  JavaScript, and React. Skilled in debugging, code optimization, and collaborative development. Passionate about writing clean, maintainable code and adapting to new technologies.
+        </p>
+
+        <nav aria-label="Social links">
+          <ul data-testid="test-user-social-links" class="socials">
+            <li>
+              <a
+                data-testid="test-user-social-twitter"
+                href="https://x.com/jojololami"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Oyinkansola Odunsi on Twitter"
+                class="social-link"
+              >Twitter</a>
+            </li>
+            <li>
+              <a
+                data-testid="test-user-social-github"
+                href="https://github.com/Jojololami?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Oyinkansola Odunsi on GitHub"
+                class="social-link"
+              >GitHub</a>
+            </li>
+            <li>
+              <a
+                data-testid="test-user-social-linkedin"
+                href="https://www.linkedin.com/in/odunsi-oyinkansola"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Oyinkansola Odunsi on LinkedIn"
+                class="social-link"
+              >LinkedIn</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="lists">
+          <section aria-labelledby="hobbies-heading">
+            <h2 id="hobbies-heading" class="list-heading">Hobbies</h2>
+            <ul data-testid="test-user-hobbies" class="bullet-list">
+              <li>Seeing Movies</li>
+              <li>Listening to Music</li>
+              <li>Streaming YouTube</li>
+              <li>Singing</li>
+            </ul>
+          </section>
+
+          <section aria-labelledby="dislikes-heading">
+            <h2 id="dislikes-heading" class="list-heading">Dislikes</h2>
+            <ul data-testid="test-user-dislikes" class="bullet-list">
+              <li>Dishonesty</li>
+              <li>Dislike 1</li>
+              <li>Dislike 2</li>
+              <li>Dislike 3</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
